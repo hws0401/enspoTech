@@ -1,4 +1,17 @@
 /*--landing page--*/
+body{
+    font-family: lato;
+}
+
+nav{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.active-nav-item{
+    text-decoration: underline;
+}
+
 .hero {
     background-image: url(taipei-1851948_1920.jpg);
     background-size: cover;
@@ -14,12 +27,21 @@
 
 .hero button {
     margin: 1rem;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     border-radius: 30px;
+    background-color: #ffffff;
+    color: #2f5597;
+    font-size: 1rem;
 }
 
 .hero h1 {
     font-size: 4rem;
+}
+
+.nav-item{
+    padding: 0 1rem;
+    margin: 0;
+    text-align: center;
 }
 
 /*--our services--*/
@@ -60,3 +82,5 @@ footer {
 i {
     padding: 5px;
 }
+
+.footer-item{}
