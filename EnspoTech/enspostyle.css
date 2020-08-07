@@ -1,11 +1,17 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*--landing page--*/
 body{
-    font-family: lato;
+    margin: 0;
+    padding: 0;
 }
 
 nav{
     padding-top: 0;
     padding-bottom: 0;
+    height: 5rem;
 }
 
 .active-nav-item{
@@ -27,7 +33,7 @@ nav{
 
 .hero button {
     margin: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     border-radius: 30px;
     background-color: #ffffff;
     color: #2f5597;
@@ -46,12 +52,71 @@ nav{
 
 /*--our services--*/
 .services {
-    text-align: center;
-    margin: 3rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .services h2 {
     padding: 1.5rem;
+    text-align: center; 
+}
+
+.services .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .nav-link {
+    color: #3f3f3f;
+}
+
+.services .nav-link:hover {
+    color: #9fb3d6;
+}
+
+.services .nav-link.active {
+    color: black;
+    background-color: #ffffff;
+    border-left: 6px solid #2f5597;
+}
+
+.services i {
+    color: #2f5597;
+}
+
+.services i:hover {
+    color: #2f5597;
+}
+
+.sercard {
+    padding: 1rem;
+}
+
+.ext p {
+    display: inline-block;
+    margin: 1rem 1rem;
+    vertical-align: top;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+.int p {
+    display: inline-block;
+    margin: 1rem 1rem;
+    vertical-align: top;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+.aft p {
+    display: inline-block;
+    margin: 1rem 1rem;
+    vertical-align: top;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
 }
 
 /*--recent blog posts--*/
@@ -70,8 +135,29 @@ footer {
     color: #ffffff;
 }
 
+.home a {
+    color: #ffffff;
+}
+
 .about a {
     color: #ffffff;
+}
+
+.blog a {
+    color: #ffffff;
+}
+
+.projects a {
+    color: #ffffff;
+}
+
+.contact a {
+    color: #ffffff;
+}
+
+.home a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
 }
 
 .about a:hover {
@@ -79,8 +165,27 @@ footer {
     text-decoration: none;
 }
 
-i {
-    padding: 5px;
+.blog a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
 }
 
-.footer-item{}
+.projects a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
+i {
+    padding: 5px;
+    color: #ffffff;
+}
+
+i:hover {
+    padding: 5px;
+    color: #dbdbdb;
+}
