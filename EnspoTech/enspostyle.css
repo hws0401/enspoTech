@@ -1,11 +1,39 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*--landing page--*/
 body{
-    font-family: lato;
+    margin: 0;
+    padding: 0;
 }
 
 nav{
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.language-switch{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.hero-text{
+    align-items: center;
+}
+
+.navbar-brand
+{
+height: 60px;
+display: block;
+float: none;
+padding: 0;
+}
+
+.navbar-brand>img {
+display: block;
+max-height: 100%;
+max-width: 100%;
 }
 
 .active-nav-item{
@@ -16,42 +44,123 @@ nav{
     background-image: url(taipei-1851948_1920.jpg);
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+/*    width: 100vw;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 650px) {
+  .hero h1 {    
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero h2{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .hero h2{
+    font-size: 3vw;
+    text-align: center;
+  }
 }
 
 .hero button {
     margin: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border-radius: 30px;
     background-color: #ffffff;
     color: #2f5597;
     font-size: 1rem;
-}
-
-.hero h1 {
-    font-size: 4rem;
+    outline: none;
 }
 
 .nav-item{
-    padding: 0 1rem;
-    margin: 0;
-    text-align: center;
+    padding: 0 .5rem;
+    margin: 0 0;
+    text-align: left;
 }
 
 /*--our services--*/
 .services {
-    text-align: center;
-    margin: 3rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .services h2 {
     padding: 1.5rem;
+    text-align: center; 
+}
+
+.services .row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services .nav-link {
+    color: #3f3f3f;
+}
+
+.services .nav-link:hover {
+    color: #9fb3d6;
+}
+
+.services .nav-link.active {
+    color: black;
+    background-color: #ffffff;
+    border-left: 6px solid #2f5597;
+}
+
+.services i {
+    color: #2f5597;
+}
+
+.services i:hover {
+    color: #2f5597;
+}
+
+.sercard {
+    padding: 1rem;
+}
+
+.ext p {
+    display: inline-block;
+    margin: 1rem 1rem;
+    vertical-align: top;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+.int p {
+    display: inline-block;
+    margin: 1rem 1rem;
+    vertical-align: top;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+.aft p {
+    display: inline-block;
+    margin: 1rem 1rem;
+    vertical-align: top;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
 }
 
 /*--recent blog posts--*/
@@ -68,10 +177,32 @@ nav{
 footer {
     background-color: #2f5597;
     color: #ffffff;
+    padding:0;
+}
+
+.home a {
+    color: #ffffff;
 }
 
 .about a {
     color: #ffffff;
+}
+
+.blog a {
+    color: #ffffff;
+}
+
+.projects a {
+    color: #ffffff;
+}
+
+.contact a {
+    color: #ffffff;
+}
+
+.home a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
 }
 
 .about a:hover {
@@ -79,8 +210,27 @@ footer {
     text-decoration: none;
 }
 
-i {
-    padding: 5px;
+.blog a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
 }
 
-.footer-item{}
+.projects a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
+i {
+    padding: 5px;
+    color: #ffffff;
+}
+
+i:hover {
+    padding: 5px;
+    color: #dbdbdb;
+}
