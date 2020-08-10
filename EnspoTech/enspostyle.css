@@ -11,6 +11,7 @@ body{
 nav{
     padding-top: 0;
     padding-bottom: 0;
+    height: 5rem;
 }
 
 .language-switch{
@@ -80,7 +81,7 @@ max-width: 100%;
 
 .hero button {
     margin: 1rem;
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     border-radius: 30px;
     background-color: #ffffff;
     color: #2f5597;
@@ -178,6 +179,10 @@ footer {
     background-color: #2f5597;
     color: #ffffff;
     padding:0;
+}
+
+.home a {
+    color: #ffffff;
 }
 
 .home a {
