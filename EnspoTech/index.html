@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="css stylesheet" href="enspostyle.css" type="text/css">
   <script src="https://kit.fontawesome.com/83b6f142a9.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
   <title>Enspiration Technology</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="fixed-top navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="a55vt-g2ivj-001.jpg" width="30" height="30" alt="ET logo" loading="lazy"></a>
+        <a class="navbar-brand" href="#"><img src="Logo_bright.png" alt="ET logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +37,7 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="https://medium.com/@inspiration.techy" target="_blank">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
@@ -44,8 +45,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
+            <li class="nav-item d-md-none ">
+              <span class="lang nav-link"><a href="#">English</a> | <a href="#">中文</a></span>
+            </li>
           </ul>
-          <div class="d-flex flex-row-reverse ">
+
+          <div class="d-none d-md-flex flex-row-reverse language-switch">
+
             <span class="lang"><a href="#">English</a> | <a href="#">中文</a></span>
           </div>
           </div>
@@ -54,12 +60,14 @@
     </nav>
   </header>
 
-
   <div class="hero">
-    <h1>Enspiration Technology</h1>
-    <h2>Define your digital future with us</h2>
+
+    <div class="hero-text">
+    <h1>Your Digital Inspiration</h1>
+    <h2>Inspiring and enlightening businesses on their digitalization journey since 2020.</h2>
     <button type="button" class="btn about">Learn More</button>
   </div>
+
 
   <section class="services">
     <h2>Our Services</h2>
@@ -188,8 +196,12 @@
   
   <section class="posts">
     <h2>Recent Blog Posts</h2>
-    <div class="row">
-	<iframe src='https://www.sociablekit.com/app/embed/44193' frameborder='0' width='100%' height="600" scrolling="no"></iframe>
+
+<div id="medium-widget"></div>
+<div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@inspiration.techy","postsPerLine":3,"limit":3,"picture":"big","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+
   </section>
   <!-- Footer -->
   <footer class="page-footer font-small pt-4">
@@ -204,8 +216,11 @@
           <!-- Content -->
           <h5>Get Connected</h5>
           <p>
-            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-            <a href="#"><i class="fab fa-medium-m fa-lg"></i></a>
+            
+            <a href="https://www.linkedin.com/company/enspiration-technology" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://medium.com/@inspiration.techy" target="_blank"><i class="fab fa-medium-m fa-lg"></i></a>
+            <a href="https://www.facebook.com/Enspiration-Technology-102624651547045" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+
           </p>
           <h5>Subscribe to our newsletter</h5>
           <p></p>
@@ -241,7 +256,8 @@
         </div>
 
         <div class="footer-item blog col-lg-auto mb-lg-0 mb-3 ml-lg-auto">
-          <h5 class="text-uppercase"><a href="#">Blog</a></h5>
+          <h5 class="text-uppercase"><a href="https://medium.com/@inspiration.techy" target="_blank">Blog</a></h5>
+
         </div>
 
         <div class="footer-item projects col-lg-auto mb-lg-0 mb-3 ml-lg-auto">
