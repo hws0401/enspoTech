@@ -11,7 +11,29 @@ body{
 nav{
     padding-top: 0;
     padding-bottom: 0;
-    height: 5rem;
+}
+
+.language-switch{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.hero-text{
+    align-items: center;
+}
+
+.navbar-brand
+{
+height: 60px;
+display: block;
+float: none;
+padding: 0;
+}
+
+.navbar-brand>img {
+display: block;
+max-height: 100%;
+max-width: 100%;
 }
 
 .active-nav-item{
@@ -22,32 +44,55 @@ nav{
     background-image: url(taipei-1851948_1920.jpg);
     background-size: cover;
     height: 100vh;
-    width: 100vw;
+/*    width: 100vw;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+  .hero h1 {    
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .hero h2{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .hero h2{
+    font-size: 3vw;
+    text-align: center;
+  }
 }
 
 .hero button {
     margin: 1rem;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     border-radius: 30px;
     background-color: #ffffff;
     color: #2f5597;
     font-size: 1rem;
-}
-
-.hero h1 {
-    font-size: 4rem;
+    outline: none;
 }
 
 .nav-item{
-    padding: 0 1rem;
-    margin: 0;
-    text-align: center;
+    padding: 0 .5rem;
+    margin: 0 0;
+    text-align: left;
 }
 
 /*--our services--*/
@@ -133,6 +178,7 @@ nav{
 footer {
     background-color: #2f5597;
     color: #ffffff;
+    padding:0;
 }
 
 .home a {
@@ -180,12 +226,108 @@ footer {
     text-decoration: none;
 }
 
-i {
+footer i {
     padding: 5px;
     color: #ffffff;
 }
 
-i:hover {
+footer i:hover {
     padding: 5px;
     color: #dbdbdb;
 }
+
+/*--about us page--*/
+.frontimg {
+    background-image: url(taiwan-5460063_1920.jpg);
+    background-position: 0% 12%;
+}
+
+.frontimg h1 {
+    color: #ffffff;
+    padding: 4rem 0 4rem 0;
+}
+
+.aboutus {
+    padding: 20px;
+}
+
+.aboutus h2 {
+    padding: 1rem 0 1rem 0;
+    font-weight: bold;
+}
+
+.aboutus h3 {
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    font-weight: bold;
+    color: #2f5597;
+}
+
+.aboutus h5 {
+    font-size: 1.2rem;
+    padding: 0.5rem 0 0 0;
+}
+
+.aboutus i {
+    color: #2f5597;
+}
+
+.aboutus .card-deck {
+    padding: 1rem 0 1rem 0;
+}
+
+.aboutlist ul {
+    margin: 0.5rem;
+}
+
+.aboutlist li {
+    list-style-type: none;
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: 2px solid #ececec;
+    color: #000000;
+    text-decoration: none;
+}
+
+.aboutlist a:hover {
+    text-decoration: none;
+}
+
+.aboutlist li:hover {
+    color: #a5a5a5;
+}
+
+/*--contact page--*/
+.contactforms {
+    padding: 1.5rem 0 1.5rem 1rem;
+}
+
+.contactdiscript {
+    padding: 1.5rem 1rem 0 0;
+}
+
+.contactdiscript h4 {
+    font-weight: bold;
+}
+
+.submitbtn {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 0 1rem 1rem 1rem;
+    border: 2px solid #dfdfdf;
+    font-weight: bold;
+    color: #6b6b6b;
+}
+
+.submitbtn:hover {
+    background-color: #dfdfdf;
+    color: #2864ca;
+}
+
+@media screen and (max-width: 576px) {
+    .contactdiscript {
+      padding: 0.5rem 1.5rem 0 1.5rem;
+      text-align: center;
+    }
+    .contactdiscript br {
+        display:none;
+    }
+  }
